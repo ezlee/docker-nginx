@@ -10,6 +10,7 @@ COPY default-ssl /etc/nginx/sites-available/default-ssl
 # add vim and netstat support
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "vim"]
+RUN ["apt-get", "install", "-y", "net-tools"]
 
 # expose both the HTTP (80) and HTTPS (443) ports
 EXPOSE 80 443
