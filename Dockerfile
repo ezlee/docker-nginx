@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1.9
 MAINTAINER Jerry Li "jerry2096@gmail.com" 
 RUN rm /etc/nginx/nginx.conf /etc/nginx/mime.types
 COPY nginx.conf /etc/nginx/nginx.conf
