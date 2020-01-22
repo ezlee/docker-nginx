@@ -13,7 +13,7 @@ RUN ["apt-get", "install", "-y", "vim"]
 RUN ["apt-get", "install", "-y", "net-tools"]
 
 # expose both the HTTP (80) and HTTPS (443) ports
-EXPOSE 80 443
+EXPOSE 80
 
 CMD ["nginx"]
 
